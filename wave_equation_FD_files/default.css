@@ -1,0 +1,49 @@
+/** BASIC */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 30px 25% 30px 25%;
+    min-width: 700px;
+    /*font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;*/
+    color: white;
+    font-size:1.5em;
+    background-color:black;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin-top: 50px;
+    color: red;
+}
+h2 {
+    font-weight: normal;
+    color: orange;
+    letter-spacing: -1px;
+}
+
+h3, h4, h5 {
+    font-weight: normal;
+    color: khaki;
+    letter-spacing: -1px;
+}
+
+
+a {
+    color: yellow;
+}
+
+  body {counter-reset: h1}
+  h1 {counter-reset: h2}
+  h2 {counter-reset: h3}
+  h3 {counter-reset: h4}
+  h4 {counter-reset: h5}
+
+  h1:before {counter-increment: h1; content: counter(h1) ". "}
+  h2:before {counter-increment: h2; content: counter(h1) "." counter(h2) ". "}
+  h3:before {counter-increment: h3; content: counter(h1) "." counter(h2) "." counter(h3) ". "}
+  h4:before {counter-increment: h4; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "}
+  h5:before {counter-increment: h5; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
